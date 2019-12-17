@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Przykład formularza</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!--<form action="wyswietl.php" method="get">-->
+<form action="wyswietl2.php" method="post" enctype="multipart/form-data">
+<p>Wypełnij formularz
+<input type="hidden" name="ukryte" value="1"/></p>
+<table>
+<tr>
+<td>Imię</td><td><input type="text" name="imie" maxlength="20" size="10"/></td>
+</tr>
+<tr>
+<td>Hasło</td><td><input type="password" name="haslo" maxlength="20" size="10"/></td>
+</tr>
+<tr>
+<td>Czy ważne?</td><td><input type="checkbox" name="wazne"/></td>
+</tr>
+<tr>
+<td>Płeć</td><td>Mężczyzna<input type="radio" name="plec" value="M"/>/Kobieta<input 
+type="radio" name="plec" value="K" checked="checked"/></td> 
+</tr>
+<tr>
+<td>Narodowość</td>
+<td>
+<select name="narodowosc" size="1">
+<option value="cz">czech</option>
+<option value="pl" selected="selected">polak</option>
+<option value="ru">rosjanin</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Wiadomość</td>
+<td><textarea cols="20" rows="3" name="wiadomosc">Wpisz wiadomość</textarea></td>
+</tr>
+<tr>
+<td>Plik</td><td><input type="file" name="plik" size="10"/></td>
+</tr>
+<tr>
+<td><input type="reset" value="Wymaż"/></td><td><input type="submit" value="Wyślij"/></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

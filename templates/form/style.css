@@ -1,0 +1,124 @@
+body {
+  background: white;
+  color: #000000;
+  font-family: Arial, sans-serif; 
+  font-size: 15px;
+  margin: 1em 2em 1em 2em;
+}   
+
+div.center p {
+  text-align: center;
+  }
+
+p, td, li { 
+  font-size: 15px;
+  text-align: justify;
+  }
+
+li {
+  margin-bottom: 0.25em;
+  }
+
+input { 
+  font-family: Arial, sans-serif; 
+  font-size: 12px;
+  }
+
+h1 {
+  color: #3F3F3F;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #3F3F3F;
+  font-style: oblique;
+  font-family: Arial, sans-serif;
+}
+
+/*
+h1:first-letter {
+  color: #00FF00;
+}
+*/
+
+b, h3 {
+  color: #4F4F4F;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+dt {
+  color: #4F4F4F;
+  font-variant: small-caps;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+dl {
+  margin-left: 25px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  }
+
+.large {
+  font-size: 18px;
+  }
+
+.script {
+  font-size: 12px;
+  }
+
+table {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  }
+  
+.center {
+  text-align: center;
+  }
+
+.right {
+  float: right;
+  margin: 0em 0em 0em 1em;
+  }
+
+.left {
+  float: left;
+  margin: 0em 1em 0em 0em;
+  }
+
+img {
+  border: 0;
+  }
+
+a:link {
+  text-decoration: none;
+  color: #7F5F5F;
+  }
+a:visited {
+  text-decoration: none;
+  color: #6F4F4F;
+  }
+a:active {
+  text-decoration: none;
+  color: #AF5F5F;
+  }
+a:hover { 
+  text-decoration: none; 
+  color: #AF5F5F; 
+  }
+
+.ramka {
+  background: red repeat url(/pict/wine-satin.jpg) fixed;
+  border-width: 1px;
+  border-color: white;
+  padding: 0.5em;
+  color: white;
+  }
