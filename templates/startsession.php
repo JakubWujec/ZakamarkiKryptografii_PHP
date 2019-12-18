@@ -13,4 +13,3 @@ if (!isset($_SESSION['user_id'])) {
         $_SESSION['user_login'] = $_COOKIE['user_login'];
     }
 }
-?>

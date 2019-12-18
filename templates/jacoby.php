@@ -1,5 +1,6 @@
-<!-- read that https://docs.mathjax.org/en/latest/web/configuration.html#local-configuration-file -->
-
+<?php
+    require_once('startsession.php')
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -121,6 +122,13 @@
 
             </div>
         </article>
+
+        <?php
+            $article='jacoby';
+            require_once('commentary_section.php');
+        ?>
+
+
     </main>
 
 </div> <!-- end wrapper -->

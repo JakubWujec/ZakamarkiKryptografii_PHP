@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // Jeśli zmienne sesji nie są ustawione, skrypt próbuje użyć
 // plików cookie.
@@ -69,15 +68,14 @@ require_once('startsession.php');
             </div>
 
             <div class="mini-article">
-                <a href="./jacoby.html">
+                <a href="jacoby.php">
                     <img src="../images/numbers.jpg" alt="password lock">
                 </a>
 
-                <a href="./jacoby.html"> <h2 class="entry-title"> Symbol Legendre’a i Jacobiego </h2> </a>
-                <p class="post-content"> Symbole Legendre'a i Jacobiego oraz ich własności własności <a href="./jacoby.html">(Więcej)</a>
+                <a href="jacoby.php"> <h2 class="entry-title"> Symbol Legendre’a i Jacobiego </h2> </a>
+                <p class="post-content"> Symbole Legendre'a i Jacobiego oraz ich własności własności <a href="jacoby.php">(Więcej)</a>
                 </p>
             </div>
-
         </main>
 
     </div> <!-- end wrapper -->
