@@ -35,6 +35,7 @@ require_once('startsession.php');
     <div class="top-menu">
     <?php
         require_once('top-menu.php');
+        require_once('visitors_counter.php');
     ?>
     </div>
 
