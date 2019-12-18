@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<?php
+
+require_once ('startsession.php');
+require_once('top-menu.php');
+
+?>
+
 <div class="wrapper">
     <header class="main-header">
         <a href="index.php">
@@ -19,11 +26,13 @@
 
 <?php
 
+
 require_once('dbconn.php');
 $error_msg = '';
 
+
 // jeśli user nie jest zalogowany
-if(!isset($_COOKIE['user_id'])) {
+if(!isset($_SESSION['user_id'])) {
     if (isset($_POST['submit'])) {
         // łaczenie z baza
         $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD,
@@ -42,9 +51,10 @@ if(!isset($_COOKIE['user_id'])) {
             // jeśli jest jeden wynik
             if (mysqli_num_rows($data) == 1) {
                 $row = mysqli_fetch_array($data);
-                setcookie('user_id', $row['id']);
-                setcookie('user_login', $row['login']);
-
+                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['user_login'] = $row['login'];
+                setcookie('user_id', $row['id'], time() + 60*60 );
+                setcookie('user_login', $row['login'], time() + 60*60 );
                 // po udanym zalogowaniu skieruj na stronę główną
                 $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) .
                     '/index.php';
@@ -89,8 +99,9 @@ if(!isset($_COOKIE['user_id'])) {
         <?php
             }
             else {
-                //jeśli jest user w ciasteczkach
-                echo('<p> Zalogowano: ' . $_COOKIE['login'] . '</p>');
+                //jeśli jest user w sesjii
+                echo('<p> Jesteś zalogowany jako: ' . $_SESSION['user_login'] . '</p>');
+
             }
         ?>
 

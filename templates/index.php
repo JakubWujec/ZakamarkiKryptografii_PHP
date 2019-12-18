@@ -1,5 +1,11 @@
-<!-- read that https://docs.mathjax.org/en/latest/web/configuration.html#local-configuration-file -->
+<?php
+session_start();
 
+// Jeśli zmienne sesji nie są ustawione, skrypt próbuje użyć
+// plików cookie.
+require_once('startsession.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,14 +34,7 @@
 <body>
     <div class="top-menu">
     <?php
-        //generowanie menu
-        if(isset($_COOKIE['user_login'])){
-            echo('Witaj ' . $_COOKIE['user_login'] . ' ');
-            echo '<a href="logout.php">Wyloguj się</a>';
-        } else {
-            echo '<a href="login.php">Zaloguj się</a>';
-            echo '<a href="register.php">Zarejestruj się</a>';
-        }
+        require_once('top-menu.php');
     ?>
     </div>
 
