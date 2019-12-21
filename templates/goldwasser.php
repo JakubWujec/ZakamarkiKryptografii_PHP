@@ -32,7 +32,12 @@ require_once('startsession.php')
 </head>
 
 <body>
-
+    <div class="top-menu">
+        <?php
+        require_once('top-menu.php');
+        require_once('visitors_counter.php');
+        ?>
+    </div>
     <div class="wrapper">
         <header class="main-header">
             <a href="index.php">

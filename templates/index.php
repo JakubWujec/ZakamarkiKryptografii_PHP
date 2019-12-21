@@ -45,6 +45,7 @@ require_once('startsession.php');
 
         <main class="content homepage-content">
 
+
             <div class="mini-article">
                 <a href="goldwasser.php">
                     <img src="../images/password.jpg" alt="password lock">
