@@ -46,24 +46,24 @@ require_once('startsession.php');
         <main class="content homepage-content">
 
             <div class="mini-article">
-                <a href="./goldwasser.html">
+                <a href="goldwasser.php">
                     <img src="../images/password.jpg" alt="password lock">
                 </a>
 
-                <a href="./goldwasser.html"> <h2 class="entry-title"> Algorytm szyfrowania probabilistycznego Goldwasser-Micali </h2> </a>
+                <a href="goldwasser.php"> <h2 class="entry-title"> Algorytm szyfrowania probabilistycznego Goldwasser-Micali </h2> </a>
                 <p class="post-content"> Jakiś wstęp do do dłuższego artykułu. Odkryli
-                jak zrobić szyfrowanie. Zobacz jak! <a href="./goldwasser.html">(Więcej)</a>
+                jak zrobić szyfrowanie. Zobacz jak! <a href="goldwasser.php">(Więcej)</a>
                 </p>
             </div>
 
             <div class="mini-article">
-                <a href="./shamir.html">
+                <a href="shamir.php">
                     <img src="../images/man.jpg" alt="man shh">
                 </a>
 
-                <a href="./shamir.html"> <h2 class="entry-title"> Dzielenie sekretu Shamira </h2> </a>
+                <a href="shamir.php"> <h2 class="entry-title"> Dzielenie sekretu Shamira </h2> </a>
                 <p class="post-content"> Schemat progowy dzielenia sekretu Shamira ze wzorem na interpolacji
-                    Lagrange’a i przykładem policzonym ręcznie dla niedużych liczb <a href="./shamir.html">(Więcej)</a>
+                    Lagrange’a i przykładem policzonym ręcznie dla niedużych liczb <a href="shamir.php">(Więcej)</a>
                 </p>
             </div>
 

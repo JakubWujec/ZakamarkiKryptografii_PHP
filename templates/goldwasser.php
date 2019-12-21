@@ -1,5 +1,6 @@
-<!-- read that https://docs.mathjax.org/en/latest/web/configuration.html#local-configuration-file -->
-
+<?php
+require_once('startsession.php')
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -109,8 +110,14 @@
                             </p> </li>
                         <li> Zdeszyfrowana wiadomość to $m = m_1, m_2, \dots , m_t$ </li>
                     </ol>
+
+                        <?php
+                        $article='goldwasser';
+                        require_once('commentary_section.php');
+                        ?>
                     </div>
             </article>
+
         </main>
 
     </div> <!-- end wrapper -->

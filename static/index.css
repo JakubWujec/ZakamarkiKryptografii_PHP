@@ -77,6 +77,13 @@ img{
     height: auto;
 }
 
+.commentary-section{
+    background-color: #dbc6bf;
+    padding-left:1em;
+
+}
+
+
 /* medium, not mobile */
 @media (min-width: 768px) {
     .main-header{

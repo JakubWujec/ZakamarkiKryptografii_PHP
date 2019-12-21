@@ -21,10 +21,11 @@ if(mysqli_num_rows($result) == 0){
 
     if(!($last_date == $date)){
         $query = "UPDATE visitors SET last_visit_date = '$date', counter=counter+1 WHERE ip='$user_ip'";
+        mysqli_query($conn, $query);
     }
 }
 
-$query = "SELECT COUNT(counter) as 'visits' FROM visitors";
+$query = "SELECT SUM(counter) as 'visits' FROM visitors";
 $result = mysqli_query($conn, $query);
 $row = mysqli_fetch_array($result);
 echo('<br><p>Odwiedzin: ' . $row['visits'] . ' ');

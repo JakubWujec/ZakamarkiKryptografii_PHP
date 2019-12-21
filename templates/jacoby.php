@@ -120,13 +120,13 @@
     else return $s*JACOBI(n_1,a_1)$
     Algorytm działa w czasie $\mathcal{O}((\log{n})^2)$
 
+
+                <?php
+                $article='jacoby';
+                require_once('commentary_section.php');
+                ?>
             </div>
         </article>
-
-        <?php
-            $article='jacoby';
-            require_once('commentary_section.php');
-        ?>
 
 
     </main>

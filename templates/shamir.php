@@ -1,4 +1,6 @@
-<!-- read that https://docs.mathjax.org/en/latest/web/configuration.html#local-configuration-file -->
+<?php
+require_once('startsession.php')
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,6 +71,10 @@
                     $$ f(x) = \sum_{i=1}^{t} \left(y_i \prod_{1 \leq j \leq t, j \neq i } \frac{x_j}{x_j - x_i} \right)\mod{p} $$
                 </p>
 
+                <?php
+                $article='shamir1';
+                require_once('commentary_section.php');
+                ?>
 
                 <h2>Przykład !!! Przykład !!! Przykład </h2>
                 <p>Czyli coś dzięki czemu można to zrozumieć. Specjalnie wybrałem małe wartości by łatwiej było to ogarnąć.
@@ -101,6 +107,11 @@
                     $$ S = a_0 = f(0) = 3 $$
 
                 </p>
+
+                <?php
+                $article='shamir2';
+                require('commentary_section.php');
+                ?>
 
             </div>
 
