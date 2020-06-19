@@ -12,6 +12,9 @@ require_once('startsession.php');
     <title>Zakamarki Kryptografii </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/index.css">
+    <!-- cookie skrypt -->
+    <script src="http://skryptcookies.pl/cookie.js"></script>
+
     <!-- MATHJAX -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script type="text/javascript"
